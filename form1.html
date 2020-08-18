@@ -1,0 +1,27 @@
+<html>
+<body>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name=="") 
+{  
+  alert("Name can't be blank");  
+  return false;  
+}
+else if(password.length<6)
+{  
+  alert("checkme is not empty");  
+  return false;  
+  }  
+}  
+</script>  
+<body>  
+<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+NAME: <input type="text" name="name"><br/>  
+CHECK: <input type="check" name="checkme"><br/>  
+<input type="submit" value="submit">  
+</form>  
+</body>
+</html>
